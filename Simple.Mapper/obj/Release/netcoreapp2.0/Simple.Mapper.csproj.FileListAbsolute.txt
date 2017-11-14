@@ -1,7 +1,6 @@
 C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Mapper\bin\Release\netcoreapp2.0\Simple.Mapper.deps.json
 C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Mapper\bin\Release\netcoreapp2.0\Simple.Mapper.dll
 C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Mapper\bin\Release\netcoreapp2.0\Simple.Mapper.pdb
-C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Mapper\bin\Release\netcoreapp2.0\MySql.Data.dll
 C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Mapper\obj\Release\netcoreapp2.0\Simple.Mapper.csproj.CoreCompileInputs.cache
 C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Mapper\obj\Release\netcoreapp2.0\Simple.Mapper.AssemblyInfoInputs.cache
 C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Mapper\obj\Release\netcoreapp2.0\Simple.Mapper.AssemblyInfo.cs

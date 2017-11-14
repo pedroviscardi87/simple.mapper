@@ -1,0 +1,12 @@
+C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Test\bin\Debug\netcoreapp2.0\Simple.Test.deps.json
+C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Test\bin\Debug\netcoreapp2.0\Simple.Test.runtimeconfig.json
+C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Test\bin\Debug\netcoreapp2.0\Simple.Test.runtimeconfig.dev.json
+C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Test\bin\Debug\netcoreapp2.0\Simple.Test.dll
+C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Test\obj\Debug\netcoreapp2.0\Simple.Test.csproj.CoreCompileInputs.cache
+C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Test\obj\Debug\netcoreapp2.0\Simple.Test.AssemblyInfoInputs.cache
+C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Test\obj\Debug\netcoreapp2.0\Simple.Test.AssemblyInfo.cs
+C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Test\bin\Debug\netcoreapp2.0\Simple.Test.dll.config
+C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Test\obj\Debug\netcoreapp2.0\Simple.Test.csprojResolveAssemblyReference.cache
+C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Test\bin\Debug\netcoreapp2.0\Simple.Test.pdb
+C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Test\obj\Debug\netcoreapp2.0\Simple.Test.dll
+C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Test\obj\Debug\netcoreapp2.0\Simple.Test.pdb
