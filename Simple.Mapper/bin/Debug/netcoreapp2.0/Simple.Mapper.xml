@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Simple.Mapper</name>
+    </assembly>
+    <members>
+        <member name="T:Simple.Mapper.Db">
+            <summary>
+            Clase Db - Database
+            </summary>
+        </member>
+        <member name="P:Simple.Mapper.Db.ShowConsoleSql">
+            <summary>
+            Chave para ligar / desligar o Console de SQL's no Debug.Write("")
+            </summary>
+        </member>
+        <member name="P:Simple.Mapper.Db.SetDbProvider">
+            <summary>
+            Qual Banco de Dados deseja utilizar? MySql ou SqlServer?
+            </summary>
+        </member>
+        <member name="P:Simple.Mapper.Db.ConnectionString">
+            <summary>
+            String de Conexão
+            </summary>
+        </member>
+        <member name="P:Simple.Mapper.Db.SqlServer">
+            <summary>
+            SQL Server Conexão
+            </summary>
+        </member>
+        <member name="P:Simple.Mapper.Db.SqlServerTransaction">
+            <summary>
+            SQL Server Transação
+            </summary>
+        </member>
+        <member name="P:Simple.Mapper.Db.SqlServerDataReader">
+            <summary>
+            SQL Server Data
+            </summary>
+        </member>
+        <member name="P:Simple.Mapper.Db.MySqlServer">
+            <summary>
+            MySQL Conexão
+            </summary>
+        </member>
+        <member name="P:Simple.Mapper.Db.MySqlTransaction">
+            <summary>
+            MySQL Transação
+            </summary>
+        </member>
+        <member name="P:Simple.Mapper.Db.MySqlDataReader">
+            <summary>
+            MySQL Data
+            </summary>
+        </member>
+        <member name="M:Simple.Mapper.Db.#ctor">
+            <summary>
+            Construtor padrão
+            </summary>
+        </member>
+        <member name="M:Simple.Mapper.Db.#ctor(System.String,Simple.Mapper.EDbProvider,System.Boolean)">
+            <summary>
+            Construtor de Criação
+            </summary>
+            <param name="ConnectionString">String de Conexão com o Banco de Dados</param>
+            <param name="SetDbProvider">Qual banco você vai utilizar? MySQL ou SQL Server?</param>
+            <param name="ShowConsoleSql">Você gostaria de visualizar as SQL's no Console DEBUG?</param>
+        </member>
+        <member name="M:Simple.Mapper.Db.Connect">
+            <summary>
+            Conectar ao Banco de Dados (Sql Server ou MySql)
+            </summary>
+            <returns>Retorno Boolean (True ou False)</returns>
+        </member>
+        <member name="M:Simple.Mapper.Db.Disconnect">
+            <summary>
+            Desconectar ao Banco de Dados (Sql Server ou MySql)
+            </summary>
+            <returns>Retorno Boolean (True ou False)</returns>
+        </member>
+        <member name="M:Simple.Mapper.Db.Execute(Simple.Mapper.Sql)">
+            <summary>
+            Execução de Comandos SQL do tipo sem Consulta, ExecuteNonQuery(); Insert, Update, Delete.
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Simple.Mapper.Db.ExecuteTransaction(Simple.Mapper.Sql)">
+            <summary>
+            Execução de Comandos SQL do tipo sem Consulta, ExecuteNonQuery(); Insert, Update, Delete. com Transações
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Simple.Mapper.Db.ExecuteScalar(Simple.Mapper.Sql)">
+            <summary>
+            Execução de Comandos SQL do tipo sem Consulta, ExecuteScalar(); Insert com Retorno de ScopeIdentity
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Simple.Mapper.Db.Select(Simple.Mapper.Sql)">
+            <summary>
+            Dados de um comando SQL para consultas no Banco de Dados.
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Simple.Mapper.Db.GetMessage(Simple.Mapper.Sql,System.TimeSpan)">
+            <summary>
+            Retorna a mensagem com o tempo de execução da SQL
+            </summary>
+            <param name="sql"></param>
+            <param name="stopwatch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Simple.Mapper.Db.GetParametersMessage(System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Retorna os parâmetros utilizados na SQL
+            </summary>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Simple.Mapper.Db.GetData(System.Object)">
+            <summary>
+            Retorna a consulta em formato DataTable para manutenção e utilização das ROWS
+            </summary>
+            <param name="reader"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Simple.Mapper.EDbOperation">
+            <summary>    
+            DQL - Data Query Language, ou LInguagem de Consulta de Dados.
+            DML - Data Manipulation Language, ou Linguagem de Manipulação de Dados. 
+            </summary>
+        </member>
+        <member name="F:Simple.Mapper.EDbOperation.Insert">
+            <summary>
+            Inserção de dados
+            </summary>
+        </member>
+        <member name="F:Simple.Mapper.EDbOperation.Delete">
+            <summary>
+            Deleção dos dados
+            </summary>
+        </member>
+        <member name="F:Simple.Mapper.EDbOperation.Update">
+            <summary>
+            Atualização dos dados
+            </summary>
+        </member>
+        <member name="F:Simple.Mapper.EDbOperation.Select">
+            <summary>
+            Consulta
+            </summary>
+        </member>
+        <member name="T:Simple.Mapper.EDbProvider">
+            <summary>
+            DataBase Provider - Qual banco de dados vai utilizar? MySQL ou SQL Server
+            </summary>
+        </member>
+        <member name="F:Simple.Mapper.EDbProvider.SqlServer">
+            <summary>
+            Microsoft® SQL Server
+            </summary>
+        </member>
+        <member name="F:Simple.Mapper.EDbProvider.MySql">
+            <summary>
+            MySQL - Oracle®
+            </summary>
+        </member>
+        <member name="T:Simple.Mapper.Sql">
+            <summary>
+            Classe SQL => Structured Query Language, ou Linguagem de Consulta Estruturada
+            </summary>
+        </member>
+        <member name="P:Simple.Mapper.Sql.Identity">
+            <summary>
+            IDENTITY(1,1) or AUTO_INCREMENT
+            </summary>
+        </member>
+        <member name="P:Simple.Mapper.Sql.Schema">
+            <summary>
+            Schema do Banco de Dados: EX: [dbo]
+            </summary>
+        </member>
+        <member name="P:Simple.Mapper.Sql.Object">
+            <summary>
+            Objeto
+            </summary>
+        </member>
+        <member name="P:Simple.Mapper.Sql.Operation">
+            <summary>
+            Qual comando SQL deseja utilizar? Insert, Delete, Update ou Select
+            </summary>
+        </member>
+        <member name="P:Simple.Mapper.Sql.Code">
+            <summary>
+            Código SQL
+            </summary>
+        </member>
+        <member name="P:Simple.Mapper.Sql.Parameters">
+            <summary>
+            Parâmetros SQL, exemplo @0,@1,@2,@3
+            </summary>
+        </member>
+        <member name="M:Simple.Mapper.Sql.#ctor">
+            <summary>
+            Construtor Padrão
+            </summary>
+        </member>
+        <member name="M:Simple.Mapper.Sql.#ctor(System.String)">
+            <summary>
+            Construtor Padrão para qualquer consulta ou operação no Banco de Dados
+            </summary>
+            <param name="sql">Sua SQL (Ex: select * from [tabela])</param>
+        </member>
+        <member name="M:Simple.Mapper.Sql.#ctor(System.String,System.Object[])">
+            <summary>
+            O Construtor SQL retorna sua sql efetuando replace nos campos (@{i}) para values!!
+            </summary>
+            <param name="sql">Sua SQL (Ex: insert into table (campo1, campo2) values (@{0},@{1}))</param>
+            <param name="values">Valores que vão substituir os (?) na SQL</param>
+        </member>
+        <member name="M:Simple.Mapper.Sql.#ctor(Simple.Mapper.EDbOperation,System.String,System.Object[])">
+            <summary>
+            O Construtor SQL retorna sua sql efetuando replace nos campos (@{i}) para values!!
+            </summary>
+            <param name="operation">Valores que vão substituir os (?) na SQL</param>
+            <param name="sql">Sua SQL (Ex: insert into table (campo1, campo2) values (@{0},@{1}))</param>
+            <param name="values">Valores que vão substituir os (?) na SQL</param>
+        </member>
+        <member name="M:Simple.Mapper.Sql.#ctor(System.String,System.Object,Simple.Mapper.EDbOperation,System.Boolean)">
+            <summary>
+            Envie qualquer tipo de Objeto selecionando a Operação Desejado, seu códido SQL será formatado automaticamente.
+            </summary>
+            <param name="schema">Exemplo [dbo]</param>
+            <param name="obj">Qualquer tipo de objeto com os tipos de dados em atributos (String, DateTime, int, Boolean)</param>
+            <param name="operation">Insert, Delete, Update</param>
+            <param name="identity">Se o campo PK é Identity incremental</param>
+        </member>
+        <member name="M:Simple.Mapper.Sql.GetName(System.Reflection.PropertyInfo,System.Object)">
+            <summary>
+            Retorna o nome da Propriedade com base nos dados do BANCO (Class.cs) => [dbo].[class]
+            </summary>
+            <param name="prop"></param>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Simple.Mapper.Sql.GetValue(System.Reflection.PropertyInfo,System.Object)">
+            <summary>
+            Retorna o valor da Propriedade com base nos dados do BANCO (Class.cs) => [dbo].[class]
+            </summary>
+            <param name="prop"></param>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Simple.Mapper.Sql.GetOperation(System.String)">
+            <summary>
+            GetOperation - Retorna a operação de acordo com a SQL
+            </summary>
+            <param name="sql">Insert, Delete, Update ou Select</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

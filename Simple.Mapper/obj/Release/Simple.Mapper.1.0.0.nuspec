@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Simple.Mapper</id>
+    <version>1.0.0</version>
+    <authors>Simple.Mapper</authors>
+    <owners>Simple.Mapper</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.0">
+        <dependency id="System.Data.SqlClient" version="4.4.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Pedro Viscardi\Documents\Institucionais\Code\Simple.Mapper\Simple.Mapper\bin\Release\netcoreapp2.0\Simple.Mapper.dll" target="lib\netcoreapp2.0\Simple.Mapper.dll" />
+  </files>
+</package>
